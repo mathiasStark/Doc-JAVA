@@ -1,0 +1,15 @@
+Tipos Primitivos:
+
+	Númericos Integrais:
+		byte - -128 a 127 = 8 bits;
+		short - -32.768 a 32.3767 = 16 bits;
+		int - -2.147.483.648 a 2.147.483.647 = 32 bits;
+		long - -9.223.372.854.775.808 a 9.223.372.854.775.807 = 64 bits;
+		char - recebe tanto um int como um caractere Unicode = 16 bits;
+
+	Númericos Flutuantes:
+		float - 32 bits;
+		double - 64 bits;
+
+	Booleano:
+		boolean - true/false = 1 bit
