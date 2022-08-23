@@ -1,0 +1,4 @@
+JRE
+ Java Runtime enviroment – ambiente de execução do Java é onde a aplicação do Java vai rodar.
+JDK
+ Java Development Kit – Kit de desenvolvimento Java. Todo o ambiente disponivel para desenvolvedores.
