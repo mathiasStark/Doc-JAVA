@@ -1,0 +1,4 @@
+Operador Ternário
+	No operador ternário o objeto em si, recebe o valor da direita após o ponto de interrogação 		se a condição for verdadeira, se for falso recebe o valor da esquerda apos os dois pontos.
+	Ex.:
+ 	Objeto <nome do Objeto> = condição ? verdadeiro : falso;

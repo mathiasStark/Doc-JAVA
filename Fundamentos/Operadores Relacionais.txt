@@ -1,0 +1,6 @@
+Operadores relacionais:
+	Retornar verdadeiro ou falso;
+	Igualdade ==;
+	Maior e Maior igual >, >=;
+	Menor e Menor Igual <, <=;
+	Diferente !=;
