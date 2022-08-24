@@ -1,0 +1,2 @@
+Paradigma de Orientação a Objetos
+ Os métodos são inseridos dentro de cada Classe, ou seja cada Classe tem um comportamento distinto.

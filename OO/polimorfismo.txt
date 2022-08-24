@@ -1,0 +1,6 @@
+Polimorfismo
+	É uma classe que representa um tipo mais genérico.
+	Exemplo uma Classe Gato é do Tipo Animal, uma classe Cachorro também é do tipo Animal;
+
+	Animal gato = new Cat();
+	Animal cachorro = new Dog();

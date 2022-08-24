@@ -1,0 +1,3 @@
+Abstração
+	Abstrair coisas do mundo real. Simplificar e codificar apenas o que importa para o sistema.
+	Modelar objetos do mundo real para atender o Sistema que vai ser criado.

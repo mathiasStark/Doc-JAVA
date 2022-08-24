@@ -1,0 +1,7 @@
+Herança
+	Define que as classes herdaram atributos e métodos de outras classes através da palavra chave extends;
+
+	Ex.: public class Cliente extends Pessoa {
+
+		//A classe Cliente é uma Pessoa, como consequencia herda seus atributos e métodos.
+	}
