@@ -1,0 +1,11 @@
+JAVAC - Java Compiler
+	É o compilador do Java! É necessário para gerar o arquivo .class para rodar na JRE.
+
+Classe
+	É o arquivo que vai moldar os Objetos, vai definir o Tipo , os atributos e os métodos para os objetos que forem instanciados.
+
+Objeto
+	É a instancia da Classe, representa uma entidade daquela Classe.
+
+Construtor
+	É a conexão entre a classe e o objeto. Podendo ser um construtor padrão ou um construtor contendo alguns ou todos os atributos da classe.

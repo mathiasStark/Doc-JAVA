@@ -1,0 +1,2 @@
+Garbage Colector
+	Coletor de lixo do Java. Quando o sistema elimina os Objetos endereçados que não possuem mais variaveis atrelados.

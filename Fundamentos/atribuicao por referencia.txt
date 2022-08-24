@@ -1,0 +1,3 @@
+Atribuição por Referência
+	Atribuir valores para tipos Objetos.
+	Aponta para um endereço em memória. Se outro objeto receber esta atribuição, este objeto vai apontar para este endereço na memória. O que fizer em uma variavel vai refletir na outra.

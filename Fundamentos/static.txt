@@ -1,0 +1,3 @@
+Static
+	Definir um atributo ou método como static, significa atrelar aquele método ou atributo diretamente à Classe. Fazendo ser possivel que esse atributo ou método seja chamado, sem a necessidade de uma instância daquela Classe.
+	Exemplo: nomeClasse.staticAtribute ou  ou nomeClasse.staticMethod();

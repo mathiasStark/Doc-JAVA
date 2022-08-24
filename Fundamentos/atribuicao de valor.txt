@@ -1,0 +1,4 @@
+Atribuição por Valor
+	Atribuir valores para tipos primitivos:
+	 int, double e float;
+	É criado um espaço independente em memória para cada variavél. Se uma variavel for atribuida ao valor de outra. Está variavel receberá uma cópia do valor da outra variável.
