@@ -1,0 +1,10 @@
+Relação 1:1
+1:1 -> 1 objeto contém outro objeto:
+	Ex.: 1 Objeto Carro tem 1 Objeto do tipo Motor;
+	Public class Carro {
+		String modelo;
+		Motor motor;
+	}
+	Public class Motor {
+		String potência;
+	}

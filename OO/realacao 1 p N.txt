@@ -1,0 +1,8 @@
+Relação 1:N
+1:N -> 1 Objeto tem muitos Objetos do mesmo tipo:
+	Ex.: 1 Carro tem muitas portas;
+Public class Carro {
+	String modelo;
+	Motor motor;
+	ArrayListy<Porta> portas = new ArrayList<Porta>(); //o Array define que a muitos objetos;
+}

@@ -1,0 +1,2 @@
+Relacao N:N
+Ex.: 1 Aluno tem vários Cursos, 1 Curso tem vários Alunos;
