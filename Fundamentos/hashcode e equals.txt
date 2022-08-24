@@ -1,0 +1,7 @@
+HashCode
+	O hashcode de um Objeto retorna um número inteiro. É o modo mais eficiente e rápido para fazer comparações entre Objetos. Após selecionado os Objetos que contém o hashCode igual, ai sim é viavel realizar o equals();
+
+Equals
+	O método equals compara todos os atributos dos objetos e verifica sua igualdade.
+	Retorna  um boolean.
+		Ex.: objeto1.equals(objeto2);

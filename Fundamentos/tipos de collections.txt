@@ -1,0 +1,6 @@
+Tipos de Collections
+	- Set: Não ordenado, Não indexado, não aceita repetição(quando add um valor repetido, este valor não é add);
+ 	- List: Mais parecido com Array, Indexada, aceita repetição;
+	- Map: Estrutura Chave/Valor, Chave não aceita repetição(PK), valor aceita repetição;
+	- Queue: implementa fila, FIFO – First in/First out;
+	- Stack: LIFO – Implementa pilha, Last in/First out;

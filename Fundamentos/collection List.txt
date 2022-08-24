@@ -1,0 +1,7 @@
+List
+Pode ser heterogêneo;
+Pode ser Homogêneo;
+Aceita objetos duplicados;
+É ordenado;
+É Indexado, para acessar o objeto pelo indice utilizar list.get(indice), para remover pelo indice list.remove(indice);
+	Ex.: List<Integer> alunos = new ArrayList<>();	

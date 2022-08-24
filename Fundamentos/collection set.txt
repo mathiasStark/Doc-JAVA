@@ -1,0 +1,9 @@
+Set
+É um conjunto heterogêneo. 
+Pode ser homogêneo também. 
+Não aceita Obj duplicados (repetição).
+Pode ser ordenado.
+Não é indexado.
+Para declarar um conjunto do tipo Set necessário declarar o tipo HashSet.
+	Ex.: HashSet nomeConjunto =  new HashSet();  ou 
+	Set nomeConjunto =  new HashSet();

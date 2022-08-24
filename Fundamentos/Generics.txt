@@ -1,0 +1,3 @@
+Generics
+	<> Utilizado para especificar o tipo do objeto que vai ser utilizado.
+	Em collections Set<Integer>, especifica que a collection Set só vai receber objetos do tipo Integer.

@@ -1,0 +1,5 @@
+Collections
+	São Arrays que podem ser criados sem definição de tamanho. 
+	- Dados heterogeneos;
+	- pode ser add items com o método .add;
+	- Não pode ser add tipos primitivos (int, double, float, boolean e char);

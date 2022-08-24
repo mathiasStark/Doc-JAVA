@@ -1,0 +1,33 @@
+Collection Map
+
+É um collection, com chave valor.
+	Map<Chave, Valor> conjunto = new HashMap<>();
+	Add chave e valor ao conjunto.
+conjunto.put(1, “maicon”);
+conjunto.put(2, “iza”);
+Também contém métodos de outras collections.
+
+Pegar todas as chaves do conjunto.
+Conjunto.keySet();
+
+Pegar todos os valores do conjunto.
+Conjunto.values();
+
+Pegar chave e valor ao mesmo tempo.
+conjunto.entrySet();
+
+Fazendo um for each a partir da chave.
+For(int chave : conjunto.keySet()) {
+	Sysout(chave);
+}
+
+Fazendo um for each a partir do valor.
+For(String valor : conjunto.values()) {
+	Sysout(valor);
+}
+
+Fazendo um for each para chave e valor com Entry do util.Map.
+For(Entry<Integer, String> registro: conjunto.entrySet()) {
+	Sysout(registro.getKey());
+	Sysout(registro.getValue());
+}

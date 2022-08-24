@@ -1,0 +1,10 @@
+Fila Queue
+	FIFO – First in, first out. 
+		Ex.: Queue<String> fila  = new LinkedList<>();
+	Offer e add -> adicionam elementos na fila;
+	Offer retrorna um erro. Add retorna um boolean;
+	Peek -> retorna o próximo elemento da fila, se a fila estiver vazia retorna false;
+	Element -> retorna o próximo elemento da fila, se afila estiver vazia retorna exception;
+	Poll -> retorna o primeiro elemento da fila e remove ele, se der erro retorna false;
+	Remove -> obtem o proximo elemento da fila e remove, se der erro retorna exception;
+	Fila.offer(); 	Fila.add(); fila.peek();	Fila.pool(); etc;
