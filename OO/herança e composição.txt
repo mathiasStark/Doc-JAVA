@@ -3,10 +3,15 @@ Composição
 	- O Carro tem um motor...
 	- O Carro tem portas...
 	- Casa tem uma cozinha...
+Relações entre Classes! 1:1, 1:N e N:N!
 
 Herança
 	Herança "...é um..."
 	- Civic é um carro.
 	- Gato é um mamífero.
 	- Maça é uma fruta.
+A Classe herda atributos e métodos de outra Classe, através do método extends!
+Classe pai  => Animal.
+Classe filho => Mamifero extends Animal.
+Classe filho => Gato extends Mamifero. //Recebe atributos da Classe Mamifero e Animal!
 	
