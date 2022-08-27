@@ -1,0 +1,12 @@
+Composição
+	Composição "...tem um..."
+	- O Carro tem um motor...
+	- O Carro tem portas...
+	- Casa tem uma cozinha...
+
+Herança
+	Herança "...é um..."
+	- Civic é um carro.
+	- Gato é um mamífero.
+	- Maça é uma fruta.
+	
