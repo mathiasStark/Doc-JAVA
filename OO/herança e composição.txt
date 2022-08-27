@@ -11,7 +11,7 @@ Herança
 	- Gato é um mamífero.
 	- Maça é uma fruta.
 A Classe herda atributos e métodos de outra Classe, através do método extends!
-Classe pai  => Animal.
-Classe filho => Mamifero extends Animal.
+Classe pai ou Super CLasse => Animal. //Classe + genérica
+Classe filho ou Sub Classe => Mamifero extends Animal.
 Classe filho => Gato extends Mamifero. //Recebe atributos da Classe Mamifero e Animal!
 	
