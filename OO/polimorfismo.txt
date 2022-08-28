@@ -4,3 +4,28 @@ Polimorfismo
 
 	Animal gato = new Cat();
 	Animal cachorro = new Dog();
+
+Em resumo aplicando casting, um Gato é um Animal mas nem sempre um Animal será um Gato, podendo ser cachorro etc.
+
+Polimorfismo Estático
+
+	Polimorfismo estático, é a sobrecarga de métodos. (Várias funcções com mesmo nome, com diversos comportamentos)
+	O mesmo método com a mesma assinatura, porém com parametros e finalidade diferentes.
+
+Polimorfismo Dinâmico
+
+	É através da Herança, quando instânciamos um Objeto de um tipo especifico é associamos este objeto a uma super classe (classe pai) mais genérica. Possivel apenas através da herança.
+	
+	EX.: Carro c = new Civic();
+	c = new Ferrari();
+	c = new Fusca();
+	
+	Isso permite que a variavel c possa ser atribuida a varios outros tipos de Carro.
+
+Métodos com Polimorfismo
+	
+	void estacionar(Civic c) {} //recebe apenas um Objeto do tipo Civic.
+	
+	void estacionar(Carro c) {} //pode receber qualquer objeto do Tipo Carro. Classe mais genérica.
+
+
