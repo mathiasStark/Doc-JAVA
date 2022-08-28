@@ -1,3 +1,10 @@
 Abstração
-	Abstrair coisas do mundo real. Simplificar e codificar apenas o que importa para o sistema.
+	Simplificação das coisas do mundo real para o digital.
+	Abstrair coisas do mundo real. Simplificar e codificar apenas o que importa para o sistema. Nem tudo que está no mundo real será mapeado para o software, e nem tudo que está no código existe no mundo real.
 	Modelar objetos do mundo real para atender o Sistema que vai ser criado.
+	
+Abstraindo uma escola.
+	Abstrair uma Super Classe Professor. -> SubClasse ProfessorIngles
+	Abstrair uma Super Classe Aluno. -> Subclasse AlunoBolsista
+	Abstrair uma Classe Sala.
+	Abstrair uma Classe Diretor.
