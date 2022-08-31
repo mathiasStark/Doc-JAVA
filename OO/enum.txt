@@ -1,0 +1,23 @@
+ENUM
+	Serve para quando tiver uma quantidade definida de possibilidades e opções.
+	Ex.: 	Dias da semana = 7;
+	     	Horas do dia 24;
+		Meses do ano = 12;
+
+public enum DiasSemana {
+	
+	DOM, SEG, TER, QUA, QUI, SEX, SAB;
+	 0    1    2    3    3    4    5
+}
+
+UM ENUM TAMBÉM DEFINE UM TIPO EM UM MÉTODO!
+
+public String dia(DiasSemana d) {
+
+	if(d == DiasSemana.SAB) {
+		sysout("Dia de Churrras");
+	}
+
+}
+
+	
