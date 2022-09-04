@@ -1,0 +1,5 @@
+Método super Herança
+	
+	Através da palavra reservada super, é possivel chamar atributos e métodos da classe pai (Super Classe), dentro do construtor da classe filha (Classe Especifica).
+	
+	

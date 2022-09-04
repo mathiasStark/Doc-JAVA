@@ -1,0 +1,24 @@
+Super()
+	Chamada super(), chama os atributos e os métodos da Super Classe.
+	Se a Super Classe não tiver o construtor padrão definido, é necessário atribuir valores no super() para instanciar um objeto.
+	
+public class Carro {
+	
+	String  marca;
+
+	public Carro(String marca) {
+		this.marca = marca;
+	}
+}
+
+public class Ferrari extends Carro {
+	
+	String  modelo;
+
+	public Ferrari(String marca) {
+		super(marca); //é passado para a Super Classe
+	}
+}
+
+	Se o construtor padrão estiver implementado na Super Classe, não é necessário passar valores no super();
+	A palavra reservada this() dentro do construtor, aponta para o próprio contrutor dentro da classe onde ele é chamado.
