@@ -1,0 +1,12 @@
+Getter e Setter
+	
+	Utilizado no encapsulamento da Classe, para acessar e fazer update dos atributos do Objeto que estão com o modificador de acesso private.
+	
+Getter
+	Utilizado para acessar os valores atuais do Objeto. Geralmente utilizado com a assinatura getAtributo() {};
+
+Setter
+	Utilizado para mudar os valores atuais do Objeto. geralmente utilizado com a assinatura 
+	setAtributo(Tipo atributo) {
+		this.atributo = atributo;
+	}

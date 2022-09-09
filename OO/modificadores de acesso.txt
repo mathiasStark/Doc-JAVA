@@ -1,0 +1,7 @@
+Modificadores de Acesso
+	
+	Private: Não visivel para outras classes;
+	Default Package: Visivel para as classes que estão no mesmo pacote;
+	Protected: Visivel através de herança entre as classes;
+	Public: Visivel para todas as classes;
+		
