@@ -2,7 +2,7 @@ Classe Abstrata
 	
 	Interface x Classe Concreta:
 	Interface tem 0% dos métodos implementados, todas os métodos não possuem corpo 
-		-> void acao(); //fim do método
+		-> void acao(); //fim do método, método abstrato.
 
 	Classe Concreta tem 100% dos métodos implementados
 		-> void acao() {
@@ -12,5 +12,6 @@ Classe Abstrata
 	A Classe abstrata transita entre estes 2 mundos, tanto pode ter 0% dos métodos implementados como 100%, ou um meio termo entre entre eles;
 	Uma Classe abstrata não pode ser instaciada através da palavra new, utilizado apenas em herança;
 	Só faz sentido criar uma classe abstrata ser ela for usada por outra classe como herança. Geralmente nutilizado apenas como Classe Conceito, Generica. Exemplos Carro, Animal, Eletrônico etc.
+	Classes abstratas podem herdar de outras Classes abstratas. Assim não é obrigatório a classe filho, implementar os métodos abstartos da Super Classe Abstrata.
 
 	
