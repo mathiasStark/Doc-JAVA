@@ -4,7 +4,24 @@ Interface
 	Uma classe que implementa uma Interface deve obrigatoriamente sobreescrever os métodos dessa interface. Se não fizer isto, o compilador irá apresentar um erro.
 	É possivel implementar varias interfaces a uma única Classe, através da virgula.
 	Por padrão todo método declarado dentro da interface é publico e abstrato, não é possivel reduzir a a visibilidade dentro da interface.
+#############################################################################################################	
+	//Nova Interface SerVivo
+	public interface SerVivo {
+		
+		//método abstrato, deve ser implementado nas demais classes.
+		public void especie();
+	}
 	
+	//Nova Classe Humano
 	public class Humano extends Animal implements SerVivo, Mamifero {
-	
+		@Override //sobreescrever o metodo da interface
+		public void especie() {
+			//implementar o método
+		}
+	}
+############################################################################################################
+
+	Para retirar a obrigatoriedade das classes que implementam a interface de implementar os seus métodos abstratos, é só colocar a palavra reservada 'default' antes do tipo do retorno. Assim o método passa a ser padrão.
+	default int somar() {
+		return 1+1;
 	}
