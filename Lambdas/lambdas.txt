@@ -1,0 +1,10 @@
+Lambdas
+	Métodos lambda são funções anônimas do JAVA, equivalentes as arrow function no Javascript;
+	
+	Ex.: (parametros do metodos) -> {
+		return //corpo do método;	
+	};
+	
+	Aplicando método lambda sem {};
+	Não é necessário utilizar o return, aceita apenas uma linha de código;
+	(parametro do metodo) -> //corpo do metodo;
