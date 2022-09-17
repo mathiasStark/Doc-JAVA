@@ -2,3 +2,12 @@ Interfaces Funcionais
 	
 	@FunctionalInterface é uma anotação Java, que define como regra que uma Interface só vai conter 1 único método abstrato;
 	Ao tentar inserir outro método na interface o compilador irá gerar um erro.
+	Para ter mais de 1 método dentro de uma interface funcional, é necessário mudar a visibilidade desete método para default ou static. Não é uma boa prática fazer isto.
+
+	default String hello() {
+		return "Hello, World!";
+	}
+
+	static String hello() {
+		return "Hello, World!";
+	}
