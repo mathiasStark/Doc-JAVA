@@ -1,0 +1,4 @@
+Interfaces Funcionais
+	
+	@FunctionalInterface é uma anotação Java, que define como regra que uma Interface só vai conter 1 único método abstrato;
+	Ao tentar inserir outro método na interface o compilador irá gerar um erro.
