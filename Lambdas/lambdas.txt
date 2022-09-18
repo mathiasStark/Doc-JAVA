@@ -8,3 +8,6 @@ Lambdas
 	Aplicando método lambda sem {};
 	Não é necessário utilizar o return, aceita apenas uma linha de código;
 	(parametro do metodo) -> //corpo do metodo;
+
+Doc de Funções lambdas disponiveis dentro do pacote, java.utils.function.
+https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html

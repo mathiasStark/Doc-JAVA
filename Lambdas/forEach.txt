@@ -1,0 +1,29 @@
+ForEach
+
+	Lógica criada para percorrer um array e palicar uma lógica para cada item deste Array:
+
+	List<String> alunos = Array.asList("Max", "Ana", "Jão"); 
+
+	for(String nome : alunos) {
+		sysout(nome);
+	}
+
+Com ForEach();
+	
+	nomeDoArray.forEach(
+		(cadaElementoDoArray) -> {
+			//método que vai ser execultado;
+		};
+	);
+	
+	alunos.forEach(
+		(nome) -> { 
+			sysout(nome); 
+		};
+	);
+
+Usando referncia de método:
+
+	List<String> alunos = Arrays.asList("Max", "Iza");
+		
+	alunos.forEach(System.out::println);

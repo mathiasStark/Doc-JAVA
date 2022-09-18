@@ -5,3 +5,6 @@ Aceita objetos duplicados;
 É ordenado;
 É Indexado, para acessar o objeto pelo indice utilizar list.get(indice), para remover pelo indice list.remove(indice);
 	Ex.: List<Integer> alunos = new ArrayList<>();	
+Para criar uma lista e já preencher ela:
+	Ex>:
+		List<String> alunos = Arrays.asList("Ana", "Bia", "Lia", "Jão");
