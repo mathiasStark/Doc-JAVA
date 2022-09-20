@@ -1,0 +1,3 @@
+Interface Funcional Predicate
+	Todo predicado recebe um único parametro e retorna um boolean.
+	Predicate<Tipo> isTrue = método lambda;
