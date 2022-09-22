@@ -1,0 +1,16 @@
+Composição de Funções
+	
+	Utilizado para complementar e utilizar um método dentro do utro.
+	Geralmente utilizado dentro de interfaces funcionais.
+	
+	//Interface Function<T, R> Recebe um tipo e retorna algum Tipo.
+
+	Function<Integer, String> parOuImpar = numero -> numero % 2 == 0 ? "Par" : "impar";
+	
+	Sysout(parOuImpar.apply(32)); //saida no console == par;
+
+	Function<String, String> oResultadoE = valor -> "O resultado é: " + valor;
+
+	String resultadoFinal = parOuImpar.andThen(oResultadoE).apply(32);
+	
+	Sysout(resultadoFinal); // Saida no console == O resultado é: Par;
