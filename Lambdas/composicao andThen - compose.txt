@@ -1,0 +1,25 @@
+Composição de Interfaces Funcionais
+
+	andThen executa da esquerda para direita:
+		UnaryOperator<Integer> maisDois = n -> n + 2;
+		UnaryOperator<Integer> vezesDois = n -> n + 2;
+		UnaryOperator<Integer> aoQuadrado = n -> n + 2;
+
+		int resultado = maisDois
+				  .andThen(vezesDois)
+				  .andThen(aoQuadrado)
+				  .apply(0);
+		Sysout(resultado);
+	Saida no console = 16
+
+	compose executa da direita para esquerda:
+		UnaryOperator<Integer> maisDois = n -> n + 2;
+		UnaryOperator<Integer> vezesDois = n -> n + 2;
+		UnaryOperator<Integer> aoQuadrado = n -> n + 2;
+
+		int resultado = aoQuadrado
+				  .compose(vezesDois)
+				  .compose(maisDois)
+				  .apply(0);
+		Sysout(resultado);
+	Saida no console = 16
