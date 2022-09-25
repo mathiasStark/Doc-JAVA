@@ -1,0 +1,10 @@
+Stream
+	Stream contém uma sequencia de conjunto de dados com o tipo definido dentro do Generics.
+	Realiza Iterações (for) internamente sem a necessidade de codar este laço.
+	
+	
+	List<String> aprovados = Arrays.asList("Max", "Iza", "Gui");
+
+	Stream<String> stream = aprovados.stream(); //a lista aprovados passar a ser reconhecida com uma Stream
+	
+	stream.dorEach(System.out::println); //possui laço for interno.
