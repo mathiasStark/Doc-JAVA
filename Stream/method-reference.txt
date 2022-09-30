@@ -1,0 +1,26 @@
+Referencia de método
+
+	Só funciona com interfaces funcionais!
+	Estrutura = Tipo::método;
+
+	Tipo = Classe do Objeto que vai ser trabalhado na lógica;
+	:: = Delimitadores;
+	método = Função pertencente a Classe que vai ser realizada, na referencia de método!
+
+Exemplo:
+	Cliente c1 = new Cliente("Max");
+	Cliente c2 = new Cliente("iza");
+	
+	List<Cliente> clientes = Arrays.asList(c1, c2);
+	
+	clientes.forEach(Cliente::getNome);
+	
+	Saida console = Max, Bia;
+	
+Exemplo 2:
+	Consumer<Cliente> consumidor1 = Cliente::getnome;
+	consumidor1.accept(c1);
+	
+	saida console = Max;
+	
+	
