@@ -1,0 +1,12 @@
+Tipos de Operações Streams
+	Encademaeando de operações Streams e o fato de ligar uma stream a outra através de operações intermediarias. Iniciando com uma operação Built que gera a primeira stream e retorna uma stream como resultado, passando para uma Operação intermediaria que também gera uma Stream como resposta. E finaliza com uma operação terminal, que retorna resposta diferente de Stream encerrando assim este ciclo.
+	Built --> Intermediaria --> Intermediaria --> Terminal
+
+Streams Sequenciais ou ordenadas
+	Seguem uma ordem ao serem executadas.
+
+Streams não ordenadas
+	Seguem uma ordem aleatória de execução.
+
+Stream Paralela
+	São Operações que são executadas simultaneamente, para ganhar performance.
