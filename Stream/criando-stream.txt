@@ -1,0 +1,26 @@
+Criando Streams
+	
+	Criando streams através de metodos estaticos. Utiliando método of();
+
+	Consumer<String> print = System.out::println;
+	Stream<String> langs = Stream.of("Java", "Lua", "Python");
+
+	langs.forEach(print);
+
+	Criando Stream apartir de um Array;
+	String[] maisLangs = Stream.of("JavaScript", "Go", "TS");
+
+	Stream.of(maisLangs).forEach(print);
+	Arrays.stream(maisLangs).forEach(print);
+	Arrays.steram(maisLangs, 1, 2); //pegando um range nos elementos dentro do array. O ultimo indice não é incluso.0
+
+	Criando Stream a partir de Collection;
+	List<String> outrasLangs = Arrays.asList("C", "PHP", "Kotlin");
+	outrasLangs.stream().forEach(print);
+	outrasLangs.parallelStream().forEach(print);
+	
+	List.stream(outrasLangs).forEach(print);
+
+	Criando uma Stream infinita sem ordem atraves do generate. Ou utilizar iterate para ser ordenada;
+	Stream.generate(Suplier<T>); //lambda que não recebe parametro e retorna algo;
+	Stream.generate(() -> "a").forEAch(print);
