@@ -1,0 +1,3 @@
+Map
+	O método Map, percorre toda a Stream e aplica a lógica para cada um dados dessa Stream. No final gera uma nova Stream de mesmo tamanho com os dados atualizados.
+	De uma forma mais amigável, o map() executa uma função de transformação em todos os elementos de uma determinada lista , e retorna uma nova lista como resultado.
