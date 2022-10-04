@@ -1,3 +1,22 @@
 Map
-	O método Map, percorre toda a Stream e aplica a lógica para cada um dados dessa Stream. No final gera uma nova Stream de mesmo tamanho com os dados atualizados.
-	De uma forma mais amigável, o map() executa uma função de transformação em todos os elementos de uma determinada lista , e retorna uma nova lista como resultado.
+	O método Map, percorre toda a Stream e aplica a lógica para cada um dos dados dessa Stream. No final gera uma nova Stream de mesmo tamanho com os dados atualizados.
+	De uma forma mais amigável, o map(lambda) executa uma função de transformação em todos os elementos de uma determinada lista , e retorna uma nova lista como resultado. 
+
+Exemplo:
+{	
+	Consumer<String> print = System.out::print;
+	
+	List<String> marcas = Arrays.asList("BMW", "Audi", "Honda") ;0
+	marcas.stream().map(m -> m.toUppercase()).forEach(print);
+
+	UnaryOperator<String> maiscula = n -> n.toUppercase();
+	UnaryOperator<String> primeiraletra = n -> n.charAt(0) + "";
+	UnaryOperator<String> grito = n -> n + "!!!";
+
+	marcas.stream()
+		.map(maiscula)
+		.map(primeiraLetra)		
+		.map(grito)
+		.forEach(print);
+}
+	
