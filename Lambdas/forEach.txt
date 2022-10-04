@@ -1,6 +1,6 @@
 ForEach
 
-	Lógica criada para percorrer um array e palicar uma lógica para cada item deste Array:
+	Lógica criada para percorrer um array e aplicar uma lógica para cada item deste Array:
 
 	List<String> alunos = Array.asList("Max", "Ana", "Jão"); 
 
