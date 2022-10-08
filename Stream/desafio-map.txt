@@ -1,0 +1,27 @@
+Desafio Map
+
+public class DesafioMap {
+
+	public static void main(String[] args) {
+		
+		List<Integer> nums = Arrays.asList(1,2,3,4,5,6,7,8,9);
+		
+		/*
+		 * 1. Número para string binaria... 6=> "110"
+		 * 2. reverter a string... "110" => "011"
+		 * 3.Coverter de voltar para inteiro => "011" => 3*/
+		
+		Function<Integer, String> bin = num -> Integer.toBinaryString(num);
+		
+		
+		
+		Function<String, String> inverter = inv -> new StringBuilder(inv).reverse().toString();
+		
+		Function<String, Integer> inteiro = s -> Integer.parseInt(s, 2);
+		
+		nums.stream().map(bin).map(inverter).map(inteiro).forEach(System.out::println);
+		
+
+	}
+
+}
