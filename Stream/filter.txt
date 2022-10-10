@@ -1,0 +1,4 @@
+Filter
+	Criar um novo Array aplicando um filtro na Stream, contendo um criterio (predicato) para filtrar e aplicar em cada item da Stream.
+	Se o critério for verdadeiro, o item que atender ao critério será adicionado ao Stream final.
+	stream().filter( n -> n%2 == 0); //adiciona apenas valores pares ao Stream final.
