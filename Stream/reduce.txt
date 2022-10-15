@@ -1,0 +1,8 @@
+Reduce
+	tem a finalidade de reduzir a lista. Através de qq lógica aplicada nele.
+	Recebe um acumuldor e o elemento atual da lista. E aplica a lógica no elemento atual, carregando o acumulador para o proximo elemento.
+	List = 1/2/9/7/910/2/3;
+	Reduce na List (acumulador, n) -> acumulador+n;
+	(0, 1) = 0+1; (1, 2) = 1+2; (3, 9) = 3+9 ...
+
+	
