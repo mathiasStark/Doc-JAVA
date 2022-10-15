@@ -1,8 +1,17 @@
 Reduce
-	tem a finalidade de reduzir a lista. Através de qq lógica aplicada nele.
+	Tem a finalidade de reduzir a lista. Através de qq lógica aplicada nele. è uma função terminadora.
+	Após o reduce o stream é finalizado.
 	Recebe um acumuldor e o elemento atual da lista. E aplica a lógica no elemento atual, carregando o acumulador para o proximo elemento.
-	List = 1/2/9/7/910/2/3;
+
+	List<Integer> nnums = Arrays.asList(1,2,9,7,9,10,2,3);
+	
+	BinaryOperator<Integer> soma = (ac, n) -> ac+n;
+
 	Reduce na List (acumulador, n) -> acumulador+n;
 	(0, 1) = 0+1; (1, 2) = 1+2; (3, 9) = 3+9 ...
+
+	Integer total = nums.stream().reduce(soma).get();
+	Sysout(total);
+		
 
 	
