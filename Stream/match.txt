@@ -1,0 +1,4 @@
+Match
+	Método aplicado a Stream que retorna true ou false dependendo do critério passado no Predicato.
+	Opções possiveis, allMatch, anyMath e noneMatch.
+	Igual ao reduce, a função match é um método terminador. Após o final, a stream é finalizada.
