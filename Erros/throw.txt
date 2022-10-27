@@ -1,0 +1,19 @@
+Throw
+	A palavra reservada throw, é utilizada para lançar um erro dentro de um método.
+	É utilizado para erros não checados. Erros que ocorrem durante a execução da aplicação. 
+	Para errors que ocorrem durante a compilação, erros que a IDE checa. É necessário colocar a palavra reservada throws no plural na assinatura do método.
+	//Checado
+	static void gerarError() throws Exception{
+		throw new Exception("Ocorreu um erro aqui!");
+	}
+	
+	//Não checado
+	static void gerarError() {
+		throw new RuntimeException("Ocorreu um erro aqui!");
+	}
+
+	try {
+		gerarError();
+	} catch(RuntimeException e) {
+		sysout(e.getMessage());
+	}
