@@ -1,0 +1,3 @@
+Try-Catch
+	Bloco de código responsável no tratamento de erros.
+	Bloco try tenta execultar o código, caso ocorra algum erro no fluxo o bloco catch captura e trata o erro.

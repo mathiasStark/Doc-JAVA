@@ -1,0 +1,15 @@
+Tipos de Erros
+
+	Erro de Compilação:
+	Erro detectado pelo compilador em tempo de execução, a IDE reporta o erro no momento do build do projeto, não deixando o rocesso de build ser completado e assim não será gerado o arquivo .class que será interpretado pela máquina.
+	
+	Erro em tempo de execução:
+	Erros que acontecem durante a execução do projeto. Erros que podem ser previsto pelo desenvolvedor. Neste cenário é necessário utilizar o tratamento de erros. Utilizando try e catch.
+Todos os tipos de erros estão dentro da Classe principal Thrwable.
+
+	Thrwable:
+	Classes abaixo de Throwable -> Error e Exception.
+	Error: São erros mais criticos que geralmente enterrompem o funcionamento da aplicação.
+	Exception: São erros que são trataveis. Desviando o fluxo daquele método que gerou a excessão, assim dando seguimento no funcionamento da aplicação.
+	
+	
