@@ -20,3 +20,5 @@ Throw
 	}
 
 Quando a excessão é checada, o métodeo que for chamar está função, é obrigado a utilizar o bloco try catch para tratar o erro.
+	Resumo qualquer exception que seja filho de RunttimeException, será uma uma excessão não checada. Ou seja, não será obrigatório tratar este erro.
+	Para Excessões que sejam filho diretos de Exception, o tratamento com try catch em algum momento quando o método é chamado é obrigatório. Se o error não for tratado o erro deve ser propagado para frente com o trhows.
