@@ -1,0 +1,16 @@
+Criando Exceção personalizada
+	1 - Criar uma classe comm o nome da exceção personalizada.
+	2 - Indicar qual Exception que ela vai herdar através do extends.
+
+Public class Personalizada extends Exception {
+	privatve String atributo;
+	
+	public Personalizada(String atributo) {
+		this.atributo = atributo;
+	}
+	
+	public String getMessage() {
+		return atributo;
+	}
+}
+	

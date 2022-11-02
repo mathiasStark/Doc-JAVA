@@ -1,0 +1,11 @@
+Finally
+	O bloco finally execulta tudo que estiver dentro do bloco de código após o catch.
+	A execução ocorre mesmo que não tenha ocorrido o erro.
+	
+	try{
+		//código a ser execultado
+	} catch(Exception e) {
+		//tratando erro, se houver
+	} finally{
+		//execulta de qualquer maneira
+	};
