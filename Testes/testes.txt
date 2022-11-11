@@ -1,0 +1,12 @@
+Testes
+	Criar uma pasta separada da pasta src, com a afinalidade depoder realizar o build apenas dos testes unitarios sem buildar junto o projeto principal.
+	Necessário adicionar a biblioteca JUnit a pasta test.
+	Click direito no nome do projeto -> properties -> Java Build Path -> Classpath -> JUnit -> Finish -> Apply and close.
+
+Estrutura de um método de Teste
+	
+	Criar cenário. Mocar os dados que são esperados ao final do método que iora ser testado.
+	
+	Chamar o método que irá ser testado.
+	
+	Usar um assert para comparar o resultado esperado. Com o resultado obtido na execução do método.
