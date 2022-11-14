@@ -1,0 +1,2 @@
+BeforeEach
+	Assinar um método com a anotação @Beforeeach, faz com que antes da execução de cada metodo de teste seja executado o método que estiver com esta anotation.
