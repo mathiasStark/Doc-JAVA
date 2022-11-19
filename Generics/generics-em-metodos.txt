@@ -1,0 +1,12 @@
+Generics em metodos
+	
+O método vai receber uma lista de qualquer tipo e vai atribuir esse tipo ao T. por fim retornando o ultimo indice da lista.
+
+	public static <T> T getUltimo(List<T> lista) {
+		return lista.get(lista.size() - 1);
+	}
+	
+	//metodo com diversos tipos genericos que retorna apenas 1 tipo
+	public static <A, B, C> C getUltimo(List<A> A, List<B> B, List<C> C) {
+		return C.get(C.size() - 1);
+	}

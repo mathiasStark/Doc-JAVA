@@ -19,3 +19,6 @@ Ao instanciar a classe Caixa em outra classe, será possivel atribuir qualquer t
 	
 	Caixa<String> coisaA = new Caixa<>();
 	coisaA.guardar("Adicionado generics do tipo String");
+
+	Caixa<Integer> coisaA = new Caixa<>();
+	coisaA.guardar(100);
