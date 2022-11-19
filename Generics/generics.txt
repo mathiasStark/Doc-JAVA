@@ -1,0 +1,21 @@
+Generics
+	Serve para criar uma classe generica, para poder suprir todo tipo de Classe no Java.
+	
+public class Caixa<T> { //Entre o < e > fica a nomenclatura para o Generics
+	
+	//Representa uma instacia da classe Object. Pai de todas outras classes.
+	private T coisa;
+	
+	public void guardar(T coisa) {
+		this.coisa = coisa;
+	}
+	
+	public T abrir() {
+		return coisa;
+	}
+}
+
+Ao instanciar a classe Caixa em outra classe, será possivel atribuir qualquer tipo para o generics.
+	
+	Caixa<String> coisaA = new Caixa<>();
+	coisaA.guardar("Adicionado generics do tipo String");
