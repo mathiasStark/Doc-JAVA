@@ -1,0 +1,3 @@
+DEFINIÇÃO
+
+Java Database Connectivity, ou JDBC, é uma API em Java que faz o envio de instruções SQL para qualquer banco de dados relacional. Para cada banco de dados existe um driver JDBC
