@@ -1,0 +1,26 @@
+UPDATE
+
+public static void main(String[] args) throws SQLException {
+
+		Connection c = FabricaConexao.getConexao();
+		
+		Scanner sr = new Scanner(System.in);
+		System.out.println("Qual registro deseja atualizar: ");
+		int codigo = sr.nextInt();
+		
+		System.out.println("Qual novo nome?");
+		String nome = sr.next();
+		
+		String query = "UPDATE pessoas SET nome = ? "
+				+ "WHERE codigo = ?";
+		
+		PreparedStatement stmt = c.prepareStatement(query); //preparando statement para evitar sql injection
+		stmt.setInt(2, codigo); //substituindo ? da segunda posicao pelo codigo digitado
+		stmt.setString(1, nome); //substituindo ? da primeira posicao pelo nome digitado
+		
+		stmt.execute(); //executando query no banco
+		
+		sr.close();
+		
+
+	}

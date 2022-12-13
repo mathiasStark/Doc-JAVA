@@ -1,0 +1,26 @@
+ADICIONANDO VALORES
+
+NÃO UTILIZAR CONCATENÇÃO NA QUERY, POIS PODE FICAR VUNERAVEL A SQL INJECTION:
+String sql = "INSERT INTO pessoas (nome) values('" + nome + "')";
+
+UTILIZAR PREPAREDSTATEMENT:
+
+public static void main(String[] args) throws SQLException {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Iforme o nome:");
+		String nome = entrada.next();
+		
+		Connection conexao = FabricaConexao.getConexao();
+		
+		String sql = "INSERT INTO pessoas (nome) VALUES (?)"; // ? substitui a concatenação
+		PreparedStatement stmt = conexao.prepareStatement(sql);
+
+		stmt.setString(1, nome); //posição do sinal de interrogação, valor que será alocado no lugar da interrogação
+		
+		stmt.execute();
+		
+		System.out.println(sql);
+		entrada.close();	
+	}
