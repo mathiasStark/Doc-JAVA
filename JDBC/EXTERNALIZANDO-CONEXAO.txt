@@ -1,0 +1,44 @@
+EXTERNALIZANDO DADOS DE CONEXAO
+
+CRIAR UM ARQUIVO CONEXAO.PROPERTIES EM SRC.
+O ARQUIVO SE BASEIA EM CHAVE X VALOR.
+
+
+#url de conexão jdbc
+banco.url = jdbc:mysql://localhost:3306/curso_java
+#user do banco
+banco.user = root
+#senha do banco
+banco.password = *******
+
+//método para acessar arquivo externo
+	private static Properties getProperties() throws IOException {
+		Properties prop = new Properties();
+		
+		//caminho do arquivo
+		String caminho = "/conexao.properties";
+		
+		//recebe uma Stream
+		prop.load(FabricaConexao.class.getResourceAsStream(caminho));
+		
+		return prop;
+	}
+
+//Utilizando método static para conectar no banco
+public static Connection getConexao() {
+		try {
+			
+			//chamando método static para acessar arquivo externo de configuração
+			Properties prop = getProperties();
+			final String url = prop.getProperty("banco.url");
+			final String user = prop.getProperty("banco.user");
+			final String password = prop.getProperty("banco.password");
+			
+			Connection conexao = DriverManager.getConnection(url, user, password);
+			
+			return conexao;
+		} catch (SQLException | IOException e) {
+			throw new RuntimeException(e);
+		}
+	
+	}

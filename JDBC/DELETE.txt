@@ -1,0 +1,37 @@
+DELETE 
+	
+public static void main(String[] args) throws SQLException {
+		
+		Scanner sr = new Scanner(System.in);
+		System.out.println("Qual registro deletar? ");
+		int id = sr.nextInt();
+		
+		String delete = "DELETE FROM pessoas WHERE  codigo = ?";
+		String select = "SELECT * FROM pessoas WHERE codigo = ?";
+		
+		
+		Connection c = FabricaConexao.getConexao();
+		PreparedStatement sel = c.prepareStatement(select);
+		sel.setInt(1, id);
+		
+		ResultSet resultado = sel.executeQuery(); //execulta a query e armazena o resultado
+		
+		List<Pessoa> pessoas = new ArrayList<>();
+		
+		while(resultado.next()) { //preenche o obj do tipo Pessoa, para exibir
+			int codigo = resultado.getInt("codigo");
+			String nome = resultado.getString("nome");
+			pessoas.add(new Pessoa(codigo, nome));
+		}
+		
+		for(Pessoa p: pessoas) {
+			System.out.println(p.getNome());
+		}
+		
+		PreparedStatement del = c.prepareStatement(delete);
+		del.setInt(1, id);
+		System.out.println("esta correto? y ou n");
+		String res = sr.next();	
+		System.out.println(res);
+		
+		del.execute();
