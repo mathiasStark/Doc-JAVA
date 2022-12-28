@@ -1,0 +1,9 @@
+DAO - DATA ACCESS OBJECT
+
+o objetivo dele é isolar todo o código de acesso a dados fornecendo para a aplicação
+
+B métodos de mais alto nível de fácil chamada e que você possa chamar esse metro de uma forma muito
+
+simples de obter aquilo que você quer sem necessariamente ficar se preocupando com os detalhes de como
+
+aquilo é feito dentro do banco de dados.
