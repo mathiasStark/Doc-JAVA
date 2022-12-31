@@ -1,0 +1,43 @@
+HIBERNATE
+
+BIBLIOTECA QUE CONTÉM TODAS AS CLASSES NECESSARIAS PARA UTILIZAR O JPA.
+
+1° BAIXAR O HIBERNATE.
+2° COPIAR OS ARQUIVOS .JAR DA PASTA REQUIREDS PARA DENTRO DO PROJETO.
+3° REFRESH.
+4° SELECIONAR TUDO E ADD TO PATH. PARA REFERENCIAR TODA A BIBLIOTECA AO PROJETO.
+5° CONFIGURAR ARQUIVO PERSISTENCE.XML
+6° DECLARAR AS CLASSES QUE VÃO REPRESENTAR AS TABELAS DO DB
+<class>exemplo.tabela.classe</class>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" 
+    xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="exercicios-jpa">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        
+        <mapping-file>META-INF/consultas.xml</mapping-file>
+        
+	// PROPRIEDADES DO BANCO DE DADOS
+        <properties>
+	    //NOME DE USUARIO E PASSWORD
+            <property name="javax.persistence.jdbc.driver"
+                value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url"
+                value="jdbc:mysql://localhost/curso_java"/>
+            <property name="javax.persistence.jdbc.user"
+                value="root"/>
+            <property name="javax.persistence.jdbc.password"
+                value="12345678"/>
+            
+	    //DIALETO UTILIZADO PELO SGBD
+            <property name="hibernate.dialect"
+                value="org.hibernate.dialect.MySQL57Dialect"/>
+            <property name="hibernate.show_sql" value="true"/> //mostra o sql
+            <property name="hibernate.format_sql" value="true"/> //formato sql no console
+            <property name="hibernate.hbm2ddl.auto" value="update"/> //VAI OU NAO GERAR UM SCHEMA DE DB A PARTIR DAS TABELAS
+        </properties>
+    </persistence-unit>
+</persistence>
