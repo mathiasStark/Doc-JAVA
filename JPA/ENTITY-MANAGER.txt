@@ -13,6 +13,10 @@ PUBLIC VOID MAIN() {
 	EntityManager EM = EMF.createEntityManager();
 	
 	Usuario novoUsuario = new Usuario("Max", "25 anos");
+	
+	EM.getTransaction().begin(); //inicia a transação com DB
+	em.persist(novoUsuario); //realiza a persistencia
+	em.getTransaction().commit(); //efetiva a transação no DB
 
 	EM.persist(novoUsuario); //PERSISTINDO OBJ NO BANCO DE DADOS
 
