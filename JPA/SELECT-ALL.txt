@@ -1,0 +1,20 @@
+SELECT ALL
+
+PUBLIC VOID MAIN() {
+
+	EntityManagerFactory EMF = PERSISTENCE.createEntityManagerFactory("NOME DO DB"); //CRIANDO A FABRICA DE CONEXÃO COM DB ESPECIFICO
+	EntityManager EM = EMF.createEntityManager();
+
+	String jpql = "select u from Usuario u"; //query que vai rodar no sgbd
+
+	TypedQuery<Usuario> query = EM.createQuery(jpql, Usuario.class); //criando a query
+
+	query.setMaxresults(5); //Limita o resultado da pesquisa
+
+	List<Usuario> usuarios = query.getResultList(); //recebendo o resultado da projeção do DB, e add a uma lista.
+
+	EM.close();
+	EMF.close();
+}
+
+	

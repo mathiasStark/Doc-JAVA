@@ -1,0 +1,25 @@
+UPDATE
+
+NERCESSARIO UTILIZAR O TRANSACTION;
+
+PUBLIC VOID MAIN() {
+
+	EntityManagerFactory EMF = PERSISTENCE.createEntityManagerFactory("NOME DO DB"); //CRIANDO A FABRICA DE CONEXÃO COM DB ESPECIFICO
+	EntityManager EM = EMF.createEntityManager();
+
+	EM.getTransaction().begin(); //inicia a transação com DB
+	
+	Usuario usuario = EM.find(Usuario.class, 1L); //buscando dados
+
+	usuario.setNome("Maicon"); //alterando dados
+	usuario.setIdade(28);
+
+	//CHAMANDO ENTITY MANAGER PARA ALTERAR O DADO NO DB
+	EM.merge(usuario); //pega o dado que está no DB e realiza o Update
+
+	EM.getTransaction().commit(); //efetiva a transação no DB
+
+	EM.close();
+	EMF.close();
+
+}
