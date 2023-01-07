@@ -1,0 +1,18 @@
+SELECT
+
+UTILIZAR O PADRAO COM ENTITY MANAGER FACTORY E ENTITY MANAGER.
+NÃO É NECESSARIO UTILIZAR O TRANSACTION PQ NÃO SE TRATA DE UMA PERSISTENCIA E SIM DE UMA PROJEÇÃO.
+
+PUBLIC VOID MAIN() {
+
+	EntityManagerFactory EMF = PERSISTENCE.createEntityManagerFactory("NOME DO DB"); //CRIANDO A FABRICA DE CONEXÃO COM DB ESPECIFICO
+	EntityManager EM = EMF.createEntityManager();
+	
+	Usuario usuario = EM.find(Usuario.class, 1L); //1° tipo de classe que vai ser mapeada do DB, 2° identificador para encontrar o dado
+	System.out.println(usuario.getNome());
+	
+	em.CLOSE();
+	emF.CLOSE();
+}
+
+	
