@@ -1,0 +1,22 @@
+REMOVE
+
+PUBLIC VOID MAIN() {
+
+	EntityManagerFactory EMF = PERSISTENCE.createEntityManagerFactory("NOME DO DB"); //CRIANDO A FABRICA DE CONEXÃO COM DB ESPECIFICO
+	EntityManager EM = EMF.createEntityManager();
+
+	//CONSULTANDO DADOS
+	Usuario usuario = EM.find(Usuario.class, 1L);
+	
+	//EXCLUINDO DADO
+	if(usuario != null) {
+		EM.getTransaction().begin();
+		EM.remove(usuario);
+		em.getTransaction().commit();
+	}
+
+	EM.merge();
+	
+	EM.close(); //FECHANDO ENTITY MANAGER
+	EMF.close();
+}
